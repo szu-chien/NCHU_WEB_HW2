@@ -2,46 +2,46 @@
 <head>
 </head>
 <body>
-
+AAAAA
 <!--
  <FORM NAME="form1" >
- 姓名  <INPUT TYPE="text" NAME="name" SIZE=10 
+ 姓名  <INPUT TYPE="text" NAME="name" SIZE=10
        MAXLENGTH=10 >
-	   <INPUT TYPE="button" VALUE="確認輸入" 
-       onClick="info_input2(1)">  <BR>  
- 電話  <INPUT TYPE="text" NAME="telephone" SIZE=20 
+	   <INPUT TYPE="button" VALUE="確認輸入"
+       onClick="info_input2(1)">  <BR>
+ 電話  <INPUT TYPE="text" NAME="telephone" SIZE=20
        MAXLENGTH=20 >
-	   <INPUT TYPE="button" VALUE="確認輸入" 
+	   <INPUT TYPE="button" VALUE="確認輸入"
        onClick="info_input()">  <BR>
- 生日  <INPUT TYPE="text" NAME="birth" SIZE=20 
+ 生日  <INPUT TYPE="text" NAME="birth" SIZE=20
        MAXLENGTH=20 >
-	   <INPUT TYPE="button" VALUE="確認輸入" 
-       onClick="info_input()">   <BR> 
- 興趣 <INPUT TYPE="text" NAME="intrest" SIZE=20 
+	   <INPUT TYPE="button" VALUE="確認輸入"
+       onClick="info_input()">   <BR>
+ 興趣 <INPUT TYPE="text" NAME="intrest" SIZE=20
        MAXLENGTH=20 >
-   <INPUT TYPE="button" VALUE="確認輸入" 
-       onClick="info_input()"> 
- </FORM> 
+   <INPUT TYPE="button" VALUE="確認輸入"
+       onClick="info_input()">
+ </FORM>
  -->
- 
+
  <form name="form1">
 姓名
 	<INPUT TYPE="text" NAME="name" SIZE=10 MAXLENGTH=10 >
 	<input type="button" VALUE="確認輸入" onclick="info_input3(1)" />
-	<BR>  
-性別  
+	<BR>
+性別
 	<INPUT TYPE="text" NAME="telephone" SIZE=20 MAXLENGTH=20 >
 	<INPUT TYPE="button" VALUE="確認輸入" onClick="info_input3(2)">  <BR>
- 生日  <INPUT TYPE="text" NAME="birth" SIZE=20 
+ 生日  <INPUT TYPE="text" NAME="birth" SIZE=20
        MAXLENGTH=20 >
-	   <INPUT TYPE="button" VALUE="確認輸入" onClick="info_input3(3)">   <BR> 
- 興趣 <INPUT TYPE="text" NAME="intrest" SIZE=20 
+	   <INPUT TYPE="button" VALUE="確認輸入" onClick="info_input3(3)">   <BR>
+ 興趣 <INPUT TYPE="text" NAME="intrest" SIZE=20
        MAXLENGTH=20 >
-   <INPUT TYPE="button" VALUE="確認輸入" onclick="info_input3(4)">  <BR> 
-   
+   <INPUT TYPE="button" VALUE="確認輸入" onclick="info_input3(4)">  <BR>
+
     <INPUT TYPE="button" VALUE="察看結果" onclick="info_input()">
-   
-  
+
+
  </form>
  <table style="border: 5px double rgb(109, 2, 107); height: 100px; background-color: rgb(255, 255, 255); width: 300px;" align="left" cellpadding="5" cellspacing="5" frame="border" rules="all">
    <tbody>
@@ -55,8 +55,8 @@
      </tr>
    </tbody>
  </table>
- 
- 
+
+
 <script>
  <!--
  function info_input()
@@ -66,14 +66,14 @@
      my_str ="姓名:"+document.form1.name.value+"\n"
   else
      my_str="姓名:未輸入\n"
-     
-  
+
+
   if (document.form1.telephone.value !="")
      my_str +="性別:"+document.form1.telephone.value+"\n"
   else
-     my_str +="性別:未輸入\n"   
-	 
-	 
+     my_str +="性別:未輸入\n"
+
+
 if (document.form1.birth.value !="")
      my_str +="生日:"+document.form1.birth.value+"\n"
   else
@@ -82,34 +82,34 @@ if (document.form1.birth.value !="")
 if (document.form1.intrest.value !="")
      my_str +="興趣:"+document.form1.intrest.value+"\n"
   else
-     my_str +="興趣:未輸入\n"   
- 	 
-  alert(my_str)     
+     my_str +="興趣:未輸入\n"
+
+  alert(my_str)
  }
- 
+
 
  //-->
- 
+
  function info_input3(id){
 	if(id=='1')
 	{
 		var output1 = document.form1.name.value;
-		document.getElementById("output1").innerHTML = output1; 
+		document.getElementById("output1").innerHTML = output1;
 	}
 	else if (id == '2')
 	{
         var output2 = document.form1.telephone.value;
-		document.getElementById("output2").innerHTML = output2; 	
+		document.getElementById("output2").innerHTML = output2;
 	}
 	else if (id == '3')
 	{
 	    var output3 = document.form1.birth.value;
-		document.getElementById("output3").innerHTML = output3; 
+		document.getElementById("output3").innerHTML = output3;
 	}
 	else if(id=='4')
 	{
 	     var output4 = document.form1.intrest.value;
-		document.getElementById("output4").innerHTML = output4; 
+		document.getElementById("output4").innerHTML = output4;
 	}
  }
 </script>
